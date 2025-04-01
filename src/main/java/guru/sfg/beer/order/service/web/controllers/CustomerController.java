@@ -38,4 +38,9 @@ public class CustomerController {
 
         return customerService.listCustomers(PageRequest.of(pageNumber, pageSize));
     }
+
+    @GetMapping("test")
+    public String listCustomers(){
+        return "Hello-world";
+    }
 }
